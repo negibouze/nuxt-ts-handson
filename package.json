@@ -1,0 +1,17 @@
+{
+  "name": "nuxt-ts-handson",
+  "version": "0.0.1",
+  "description": "Nuxt.js+TypeScript Hands-on",
+  "scripts": {
+    "dev": "nuxt"
+  },
+  "keywords": [
+    "nuxt",
+    "typescript"
+  ],
+  "author": "Yoshiaki Itakura (https://github.com/negibouze)",
+  "license": "MIT",
+  "dependencies": {
+    "nuxt": "^2.10.2"
+  }
+}
