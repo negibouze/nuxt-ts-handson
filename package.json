@@ -3,15 +3,39 @@
   "version": "0.0.1",
   "description": "Nuxt.js+TypeScript Hands-on",
   "scripts": {
-    "dev": "nuxt"
+    "dev": "nuxt",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
   },
   "keywords": [
     "nuxt",
     "typescript"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/negibouze/nuxt-ts-handson.git"
+  },
   "author": "Yoshiaki Itakura (https://github.com/negibouze)",
   "license": "MIT",
   "dependencies": {
     "nuxt": "^2.10.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-vue": "^5.2.3",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
+    "prettier": "^1.18.2"
+  },
+  "lint-staged": {
+    "*.{js,vue}": "eslint --ext .js,.vue --ignore-path .gitignore"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
