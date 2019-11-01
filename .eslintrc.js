@@ -4,20 +4,15 @@ module.exports = {
     browser: true,
     node: true
   },
-  parserOptions: {
-    parser: 'babel-eslint'
-  },
   extends: [
     'eslint:recommended',
-    'plugin:vue/recommended',
-    'plugin:prettier/recommended'
+    '@nuxtjs/eslint-config-typescript',
+    'plugin:prettier/recommended',
   ],
-  plugins: [
-    'vue'
-  ],
+  plugins: [],
   rules: {
+    'no-unused-vars': 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'vue/max-attributes-per-line': 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
   }
 }

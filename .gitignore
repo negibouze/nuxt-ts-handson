@@ -63,6 +63,3 @@ sw.*
 
 # Mac OSX
 .DS_Store
-
-# Storybook
-storybook/static

@@ -1,12 +1,20 @@
 <template>
-  <h1>Hello {{ name }}!!!</h1>
+  <div>
+    <h1>Hello {{ user.name }}!!!</h1>
+    <span>You are {{ user.age }} years old.</span>
+  </div>
 </template>
 
-<script>
+<script lang="ts">
+interface User {
+  name: string
+  age: number
+}
+
 export default {
   props: {
-    name: {
-      type: String,
+    user: {
+      type: Object,
       required: true
     }
   }

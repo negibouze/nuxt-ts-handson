@@ -1,13 +1,21 @@
 <template>
-  <hello name="World" />
+  <hello :user="user" />
 </template>
 
-<script>
-import Hello from '~/components/atoms/Hello/Hello.vue'
+<script lang="ts">
+import Hello from '../components/atoms/Hello'
 
 export default {
   components: {
     Hello
+  },
+  data() {
+    return {
+      user: {
+        name: 'Taro',
+        age: 10
+      }
+    }
   }
 }
 </script>
