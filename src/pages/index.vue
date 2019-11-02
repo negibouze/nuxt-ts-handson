@@ -3,19 +3,19 @@
 </template>
 
 <script lang="ts">
-import Hello from '../components/atoms/Hello'
+import 'reflect-metadata'
+import { Component, Vue } from 'nuxt-property-decorator'
+import Hello, { User } from '../components/atoms/Hello'
 
-export default {
+@Component({
   components: {
     Hello
-  },
-  data() {
-    return {
-      user: {
-        name: 'Taro',
-        age: 10
-      }
-    }
+  }
+})
+export default class extends Vue {
+  private user: User = {
+    name: 'Taro',
+    age: 10
   }
 }
 </script>

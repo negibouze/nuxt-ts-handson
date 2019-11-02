@@ -3,6 +3,8 @@
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "lib": [
       "esnext",
       "esnext.asynciterable",

@@ -6,17 +6,11 @@
 </template>
 
 <script lang="ts">
-interface User {
-  name: string
-  age: number
-}
+import { Component, Prop, Vue } from 'nuxt-property-decorator'
+import { User } from './export-types'
 
-export default {
-  props: {
-    user: {
-      type: Object,
-      required: true
-    }
-  }
+@Component
+export default class Hello extends Vue {
+  @Prop({ required: true }) user!: User
 }
 </script>

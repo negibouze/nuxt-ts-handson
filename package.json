@@ -18,7 +18,9 @@
   "author": "Yoshiaki Itakura (https://github.com/negibouze)",
   "license": "MIT",
   "dependencies": {
-    "nuxt": "^2.10.2"
+    "nuxt": "^2.10.2",
+    "nuxt-property-decorator": "^2.5.0",
+    "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.3.2",
