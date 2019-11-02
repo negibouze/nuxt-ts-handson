@@ -13,7 +13,10 @@ module.exports = {
   collectCoverage: true,
   collectCoverageFrom: [
     '<rootDir>/src/components/**/*.vue',
-    '<rootDir>/src/pages/**/*.vue',
     '<rootDir>/src/**/*.ts'
+  ],
+  coveragePathIgnorePatterns: [
+    '/node_modules/',
+    '<rootDir>\\/src\\/components\\/.*\\.ts'
   ]
 }
