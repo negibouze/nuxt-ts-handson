@@ -30,7 +30,7 @@
     "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {
-    "@nuxt/typescript-build": "^0.3.2",
+    "@nuxt/typescript-build": "^0.3.3",
     "@nuxtjs/eslint-config-typescript": "^0.1.3",
     "@storybook/addon-actions": "^5.2.5",
     "@storybook/addon-centered": "^5.2.5",
@@ -56,7 +56,7 @@
     "vue-jest": "^3.0.5"
   },
   "lint-staged": {
-    "*.{ts,js,vue}": "eslint --ext .ts.js,.vue --ignore-path .gitignore"
+    "*.{ts,js,vue}": "eslint --ext .ts,.js,.vue --ignore-path .gitignore"
   },
   "husky": {
     "hooks": {
